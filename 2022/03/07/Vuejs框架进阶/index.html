@@ -6,19 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>demo | Hexo</title>
+  <title>Gerry的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="demo">
-<meta property="og:url" content="http://example.com/2022/03/04/demo/index.html">
-<meta property="og:site_name" content="Hexo">
+  <meta name="description" content="Vuex简介 概念：  图解：     2. vuex的工作原理： 3. Vuex的环境搭建： 在控制台安装：npm i vuex  创建文件：src&#x2F;store&#x2F;index.js index.js中引入vuex 1234567891011121314151617181920212223242526272829&#x2F;&#x2F;该文件用于创建Vuex中最为核心的store&#x2F;&#x2F;引入Vuexim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gerry的个人博客">
+<meta property="og:url" content="http://example.com/2022/03/07/Vuejs%E6%A1%86%E6%9E%B6%E8%BF%9B%E9%98%B6/index.html">
+<meta property="og:site_name" content="Gerry的个人博客">
+<meta property="og:description" content="Vuex简介 概念：  图解：     2. vuex的工作原理： 3. Vuex的环境搭建： 在控制台安装：npm i vuex  创建文件：src&#x2F;store&#x2F;index.js index.js中引入vuex 1234567891011121314151617181920212223242526272829&#x2F;&#x2F;该文件用于创建Vuex中最为核心的store&#x2F;&#x2F;引入Vuexim">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-03-04T09:15:14.000Z">
-<meta property="article:modified_time" content="2022-03-04T09:15:14.248Z">
+<meta property="og:image" content="c:/Users/86166/AppData/Roaming/Typora/typora-user-images/image-20211007162721002.png">
+<meta property="og:image" content="c:/Users/86166/AppData/Roaming/Typora/typora-user-images/image-20211007162736381.png">
+<meta property="og:image" content="c:/Users/86166/AppData/Roaming/Typora/typora-user-images/image-20211007162744933.png">
+<meta property="article:published_time" content="2022-03-07T07:51:13.480Z">
+<meta property="article:modified_time" content="2021-12-13T00:32:11.707Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/86166/AppData/Roaming/Typora/typora-user-images/image-20211007162721002.png">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Gerry的个人博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -152,27 +158,295 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-demo" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Vuejs框架进阶" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      demo
-    </h1>
-  
-
-        
-        <a href="/2022/03/04/demo/" class="archive-article-date">
-  	<time datetime="2022-03-04T09:15:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-04</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="Vuex简介"><a href="#Vuex简介" class="headerlink" title="Vuex简介"></a>Vuex简介</h3><ol>
+<li><p>概念：</p>
+</li>
+<li><p>图解：</p>
+<p><img src="C:\Users\86166\AppData\Roaming\Typora\typora-user-images\image-20211007162721002.png" alt="image-20211007162721002"></p>
+</li>
+</ol>
+<p><img src="C:\Users\86166\AppData\Roaming\Typora\typora-user-images\image-20211007162736381.png" alt="image-20211007162736381"></p>
+<h4 id="2-vuex的工作原理："><a href="#2-vuex的工作原理：" class="headerlink" title="2. vuex的工作原理："></a>2. vuex的工作原理：</h4><p><img src="C:\Users\86166\AppData\Roaming\Typora\typora-user-images\image-20211007162744933.png" alt="image-20211007162744933"></p>
+<h4 id="3-Vuex的环境搭建："><a href="#3-Vuex的环境搭建：" class="headerlink" title="3. Vuex的环境搭建："></a>3. Vuex的环境搭建：</h4><ol>
+<li><p>在控制台安装：npm i vuex</p>
+</li>
+<li><p>创建文件：src&#x2F;store&#x2F;index.js</p>
+<p>index.js中引入vuex</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//该文件用于创建Vuex中最为核心的store</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//引入Vuex</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Vuex</span> <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">Vuex</span>)</span><br><span class="line"><span class="comment">//准备actions -用于响应组件中的动作</span></span><br><span class="line"><span class="keyword">const</span> actions =&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//准备mutations -用于操作数据</span></span><br><span class="line"><span class="keyword">const</span> mutations =&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//准备state -用于存储数据</span></span><br><span class="line"><span class="keyword">const</span> state =&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建store</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title class_">Store</span>(&#123;</span><br><span class="line">  actions,</span><br><span class="line">  mutations,</span><br><span class="line">  state</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//暴露store</span></span><br><span class="line"><span class="comment">//export default store</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>在main.js中创建vm时传入store配置项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//引入store</span><br><span class="line">import store from &#x27;./store/index&#x27;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Vue.config.productionTip = false</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  el: &#x27;#app&#x27;,</span><br><span class="line">  router,</span><br><span class="line">  components: &#123; App &#125;,</span><br><span class="line">  template: &#x27;&lt;App/&gt;&#x27;,</span><br><span class="line">  store,</span><br><span class="line">  beforeCreate()&#123;</span><br><span class="line">    Vue.prototype.$bus = this //安装全局事件总线</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+<h4 id="4-Vuex的基本使用"><a href="#4-Vuex的基本使用" class="headerlink" title="4. Vuex的基本使用"></a>4. Vuex的基本使用</h4><ol>
+<li><p>初始化数据、配置actions、配置mutations、操作文件store&#x2F;index.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//该文件用于创建Vuex中最为核心的store</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//引入Vuex</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Vuex</span> <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">Vuex</span>)</span><br><span class="line"><span class="comment">//准备actions -用于响应组件中的动作</span></span><br><span class="line"><span class="keyword">const</span> actions =&#123;</span><br><span class="line">  <span class="title function_">jia</span>(<span class="params">context,value</span>)&#123;</span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;actions中jia被调用了&#x27;</span>,context,value)</span><br><span class="line">    context.<span class="title function_">commit</span>(<span class="string">&#x27;JIA&#x27;</span>,value)</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="title function_">jian</span>(<span class="params">context,value</span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;actions中jian被调用了&#x27;</span>,context,value)</span><br><span class="line">    context.<span class="title function_">commit</span>(<span class="string">&#x27;JIAN&#x27;</span>,value)</span><br><span class="line"> &#125;,</span><br><span class="line">  <span class="title function_">jiaOdd</span>(<span class="params">context,value</span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;actions中jiaOdd被调用了&#x27;</span>,context,value)</span><br><span class="line">    <span class="keyword">if</span>(context.<span class="property">state</span>.<span class="property">sum</span> % <span class="number">2</span>)&#123;</span><br><span class="line">       context.<span class="title function_">commit</span>(<span class="string">&#x27;JIA&#x27;</span>,value)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="title function_">jiaWait</span>(<span class="params">context,value</span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;actions中jia被调用了&#x27;</span>,context,value)</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">      context.<span class="title function_">commit</span>(<span class="string">&#x27;JIA&#x27;</span>,value)</span><br><span class="line">    &#125;,<span class="number">500</span>)</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//准备mutations -用于操作数据</span></span><br><span class="line"><span class="keyword">const</span> mutations =&#123;</span><br><span class="line">  <span class="title function_">JIA</span>(<span class="params">state,value</span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;mutations中JIA被调用了&#x27;</span>,state,value)</span><br><span class="line">    state.<span class="property">sum</span> +=value;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="title function_">JIAN</span>(<span class="params">state,value</span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;mutations中JIAN被调用了&#x27;</span>,state,value)</span><br><span class="line">    state.<span class="property">sum</span> -=value;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//准备state -用于存储数据</span></span><br><span class="line"><span class="comment">//初始化数据</span></span><br><span class="line"><span class="keyword">const</span> state =&#123;</span><br><span class="line">  <span class="attr">sum</span>:<span class="number">0</span> <span class="comment">//当前的和</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建并暴露store</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title class_">Store</span>(&#123;</span><br><span class="line">  actions,</span><br><span class="line">  mutations,</span><br><span class="line">  state</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//暴露store</span></span><br><span class="line"><span class="comment">//export default store</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>组件中读取vuex中的数据：$store.state.sum (sum为数据名)</p>
+</li>
+<li><p>组件中修改vuex中的数据：$store.dispatch(‘actions中的方法名’,数据)</p>
+<p>或$store.commit(‘mutations中的方法名’,数据)</p>
+<blockquote>
+<p>备注：若没有网络请求或其他业务逻辑，组件中也可以越过actions,即不写dispatch,直接写commit</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="5-getters的使用"><a href="#5-getters的使用" class="headerlink" title="5. getters的使用"></a>5. getters的使用</h4><ol>
+<li><p>概念：当state中的数据需要经过加工后再使用时，可以使用getters加工</p>
+</li>
+<li><p>在store&#x2F;index.js中追加getters配置。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//准备getters项-用于将state中的数据进行加工</span></span><br><span class="line"><span class="keyword">const</span> getters =&#123;</span><br><span class="line">  <span class="title function_">bigSum</span>(<span class="params">state</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> state.<span class="property">sum</span>*<span class="number">10</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建并暴露store</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title class_">Store</span>(&#123;</span><br><span class="line">  actions,</span><br><span class="line">  mutations,</span><br><span class="line">  state,</span><br><span class="line">  getters</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在组件中读取数据：$store.getters.bigSum</p>
+</li>
+</ol>
+<h4 id="6-四个map方法的使用"><a href="#6-四个map方法的使用" class="headerlink" title="6. 四个map方法的使用"></a>6. 四个map方法的使用</h4><ol>
+<li><p>mapState方法：用于帮助我们映射state中的数据为计算属性。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">computed</span>:&#123;</span><br><span class="line">	 <span class="comment">//借助mapState生成计算属性，从state中读取数据(对象写法)</span></span><br><span class="line">      ...<span class="title function_">mapState</span>(&#123;<span class="attr">sum</span>:<span class="string">&#x27;sum&#x27;</span>,<span class="attr">school</span>:<span class="string">&#x27;school&#x27;</span>,<span class="attr">subject</span>:<span class="string">&#x27;subject&#x27;</span>&#125;),</span><br><span class="line">      </span><br><span class="line">       <span class="comment">//借助mapState生成计算属性，从state中读取数据(数组写法)</span></span><br><span class="line">       ...<span class="title function_">mapState</span>([<span class="string">&#x27;sum&#x27;</span>,<span class="string">&#x27;school&#x27;</span>,<span class="string">&#x27;subject&#x27;</span>]),</span><br><span class="line">      </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>mapGetters方法：用于帮助我们映射getters中的数据为计算属性。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//借助mapgetters生成计算属性，从getters中读取数据(对象写法)</span></span><br><span class="line">      / ...<span class="title function_">mapGetters</span>(&#123;<span class="attr">bigSum</span>:<span class="string">&#x27;bigSum&#x27;</span>&#125;),</span><br><span class="line">      </span><br><span class="line">      <span class="comment">//借助mapgetters生成计算属性，从getters中读取数据(数组写法)</span></span><br><span class="line">      ...<span class="title function_">mapGetters</span>([<span class="string">&#x27;bigSum&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>mapActions方法：用于帮助我们生成与actions对话的方法，即：包含$store.dispatch(xxx)的函数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">methods</span>:&#123;</span><br><span class="line">	<span class="comment">//靠mapActions生成，incrementOdd、incrementWait(对象形式)</span></span><br><span class="line">	...<span class="title function_">mapActions</span>(&#123;<span class="attr">incrementOdd</span>:<span class="string">&#x27;jiaOdd&#x27;</span>,<span class="attr">incrementWait</span>:<span class="string">&#x27;jiaWait&#x27;</span>&#125;)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//数组写法</span></span><br><span class="line">    ...<span class="title function_">mapActions</span>([<span class="string">&#x27;jiaOdd&#x27;</span>,<span class="string">&#x27;jiaWait&#x27;</span>])</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">如果要传入参数，则在调用这个方法时传入：</span></span><br><span class="line"><span class="comment">如：</span></span><br><span class="line"><span class="comment"> &lt;button @click=&quot;increment(n)&quot;&gt;+&lt;/button&gt;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>mapMutations方法：用于帮助我们生成与mutations对话的方法，即：包含$store.commit(xxx)的函数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">methods</span>:&#123;</span><br><span class="line"><span class="comment">//靠mapMutations生成：increment、decrement(对象写法)</span></span><br><span class="line">...<span class="title function_">mapMutations</span>(&#123;<span class="attr">increment</span>:<span class="string">&#x27;JIA&#x27;</span>,<span class="attr">decrement</span>:<span class="string">&#x27;JIAN&#x27;</span>&#125;)</span><br><span class="line">    <span class="comment">//数组写法</span></span><br><span class="line">...<span class="title function_">mapMutations</span>([<span class="string">&#x27;JIA&#x27;</span>,<span class="string">&#x27;JIAN&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>备注：mapActions与mapMutations使用时，若要传递参数，在模板中绑定事件时传递参数，否则参数对象是事件对象。</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="vue-router"><a href="#vue-router" class="headerlink" title="vue-router"></a>vue-router</h3><ol>
+<li><p>vue-router的理解：vue-router是Vue 的一个插件库，专门用来实现SPA应用。</p>
+</li>
+<li><p>对SPA的理解：</p>
+<ol>
+<li>单页Web应用(single web application ,SPA)</li>
+<li>整个应用只有一个完整的页面。</li>
+<li>点击页面中的导航链接不会刷新页面，只会做页面的局部更新。</li>
+<li>数据需要通过ajax请求获取。</li>
+</ol>
+</li>
+<li><p>路由的理解：</p>
+<ol>
+<li>什么是路由：<ol>
+<li>一个路由就是一组映射关系(key-value)</li>
+<li>key为路径，value可能是<strong>function</strong> 或<strong>component</strong></li>
+<li>多个路由，需要经过路由器的管理</li>
+</ol>
+</li>
+<li>路由的分类：<ol>
+<li>后端路由：<ol>
+<li>理解：value是function,用于处理客户端提交的请求。</li>
+<li>工作过程：服务器接收到一个请求时，根据请求路径找到匹配的函数来处理请求，返回响应数据。</li>
+</ol>
+</li>
+<li>前端路由：<ol>
+<li>理解：value是 component ,用于展示页面内容。</li>
+<li>工作过程：当浏览器的路径改变时，对应的组件就会显示。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="路由的基本使用"><a href="#路由的基本使用" class="headerlink" title="路由的基本使用"></a>路由的基本使用</h4><ol>
+<li><p>在控制台安装vue-router:</p>
+<p>npm i vue-router</p>
+</li>
+<li><p>新建文件夹router,router下建一个index.js文件</p>
+<p>router&#x2F;index.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Router</span> <span class="keyword">from</span> <span class="string">&#x27;vue-router&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">About</span>  <span class="keyword">from</span> <span class="string">&#x27;../pages/About&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Home</span>  <span class="keyword">from</span> <span class="string">&#x27;../pages/Home&#x27;</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">Router</span>)</span><br><span class="line"><span class="comment">//创建并暴露路由器</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> <span class="title class_">Router</span>(&#123;</span><br><span class="line">  <span class="attr">routes</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">path</span>: <span class="string">&#x27;/about&#x27;</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;About&#x27;</span>,</span><br><span class="line">      <span class="attr">component</span>: <span class="title class_">About</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">path</span>: <span class="string">&#x27;/home&#x27;</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;Home&#x27;</span>,</span><br><span class="line">      <span class="attr">component</span>: <span class="title class_">Home</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>实现局部切换：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link active-class=&quot;active&quot; to=&quot;/about&quot;&gt;About&lt;/router-link&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>指定位置展示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-view&gt;&lt;/router-view&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>几个注意点：</p>
+<ol>
+<li>路由组件通常存放在pages文件夹，一般组件通常存放在component文件夹。</li>
+<li>通过切换，“隐藏”了的路由组件，默认是被销毁掉的，需要的时候再去挂载。</li>
+<li>每个组件都有自己的$route属性，里面存储着自己的路由信息。</li>
+<li>整个应用只有一个router,可以通过组件的$router属性获取到。</li>
+</ol>
+</li>
+<li><p>代码：见vue-center中的09_src_路由的基本使用。</p>
+</li>
+</ol>
+<h4 id="路由的query参数"><a href="#路由的query参数" class="headerlink" title="路由的query参数"></a>路由的query参数</h4><ol>
+<li><p>传递参数：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--跳转并携带query参数，to的字符串写法--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">:to</span>=<span class="string">&quot;/home/message/detail?id=666&amp;title=&quot;</span>你好&gt;</span>跳转<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"> <span class="comment">&lt;!--跳转并携带query参数：to的对象写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span></span></span><br><span class="line"><span class="tag">      <span class="attr">:to</span>=<span class="string">&quot;&#123;</span></span></span><br><span class="line"><span class="string"><span class="tag">             path:&#x27;/home/message/detail&#x27;,</span></span></span><br><span class="line"><span class="string"><span class="tag">           	 query:&#123;</span></span></span><br><span class="line"><span class="string"><span class="tag">           		id:666,</span></span></span><br><span class="line"><span class="string"><span class="tag">           		title:&#x27;你好&#x27;</span></span></span><br><span class="line"><span class="string"><span class="tag">           &#125;</span></span></span><br><span class="line"><span class="string"><span class="tag">                  &#125;&quot;</span></span></span><br><span class="line"><span class="tag">&gt;</span>跳转<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>接收参数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$route.query.id</span><br><span class="line">$route.query.title</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="路由的params参数"><a href="#路由的params参数" class="headerlink" title="路由的params参数"></a>路由的params参数</h4><ol>
+<li><p>传递参数：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--跳转并携带params参数，to的字符串写法--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">:to</span>=<span class="string">&quot;`/home/message/detail/666/你好`&quot;</span>&gt;</span>跳转<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--跳转并携带params参数，to的对象写法--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">:to</span>=<span class="string">&quot;&#123;</span></span></span><br><span class="line"><span class="string"><span class="tag">                  name:&#x27;Detail&#x27;,</span></span></span><br><span class="line"><span class="string"><span class="tag">                  params:&#123;</span></span></span><br><span class="line"><span class="string"><span class="tag">                  	id:666,</span></span></span><br><span class="line"><span class="string"><span class="tag">                  	title:&#x27;你好&#x27;</span></span></span><br><span class="line"><span class="string"><span class="tag">                  &#125;</span></span></span><br><span class="line"><span class="string"><span class="tag">                  &#125;&quot;</span>&gt;</span></span><br><span class="line">跳转<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>接收参数：</p>
+<blockquote>
+<p>特别注意：路由携带params参数时，若使用to的对象写法，则不能使用path配置项，必须使用name配置。</p>
+</blockquote>
+</li>
+</ol>
+<p><router-link>的replace属性</p>
+<ol>
+<li><p>作用：控制路由跳转时操作浏览器历史记录的模式。</p>
+</li>
+<li><p>浏览器的历史记录有两种写入方式：分别为push和replace,push是追加历史记录，replace是替换当前记录。路由器跳转的时候默认是push.</p>
+</li>
+<li><p>如何开启replace模式：</p>
+<p><router-link replace>News</router-link></p>
+</li>
+</ol>
+<h4 id="编程式路由导航"><a href="#编程式路由导航" class="headerlink" title="编程式路由导航"></a>编程式路由导航</h4><ol>
+<li><p>作用：不借助<router-link>实现路由跳转，让路由跳转更加灵活。</p>
+</li>
+<li><p>具体编码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//$router的两个api</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">push</span>(&#123;</span><br><span class="line">	<span class="attr">name</span>:<span class="string">&#x27;Detail&#x27;</span>,</span><br><span class="line">	<span class="attr">params</span>:&#123;</span><br><span class="line">		<span class="attr">id</span>:xxx,</span><br><span class="line">		<span class="attr">title</span>:xxx</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">replace</span>(&#123;</span><br><span class="line">	<span class="attr">name</span>:<span class="string">&#x27;Detail&#x27;</span>,</span><br><span class="line">	<span class="attr">params</span>:&#123;</span><br><span class="line">		<span class="attr">id</span>:xxx,</span><br><span class="line">		<span class="attr">title</span>:xxx</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//前进</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">forward</span>();</span><br><span class="line"><span class="comment">//后退</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">back</span>();</span><br><span class="line"><span class="comment">//可前进，可后退</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">go</span>(number)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="缓存路由组件"><a href="#缓存路由组件" class="headerlink" title="缓存路由组件"></a>缓存路由组件</h4><ol>
+<li><p>作用：让不展示的路由组件保持挂载，不被销毁。</p>
+</li>
+<li><p>具体编码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--缓存一个路由组件--&gt;</span><br><span class="line">&lt;keep-alive include=&quot;News&quot;&gt;</span><br><span class="line">	&lt;router-link&gt;&lt;/router-link&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br><span class="line">&lt;!--缓存多个路由组件--&gt;</span><br><span class="line">&lt;keep-alive include=&quot;[&#x27;News&#x27;,&#x27;Message&#x27;]&quot;&gt;</span><br><span class="line">    &lt;router-link&gt;&lt;/router-link&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="路由守卫"><a href="#路由守卫" class="headerlink" title="路由守卫"></a>路由守卫</h4><ol>
+<li><p>作用：对路由进行权限控制。</p>
+</li>
+<li><p>分类：全局守卫、独享守卫、组件内守卫</p>
+</li>
+<li><p>全局守卫：</p>
+</li>
+</ol>
+<h4 id="路由器的两种工作模式"><a href="#路由器的两种工作模式" class="headerlink" title="路由器的两种工作模式"></a>路由器的两种工作模式</h4><ol>
+<li>对于一个url来说，什么是hash值？——#及其后面的内容就是hash值。</li>
+<li>hash值不会包含在HTTP请求中，即：hash值不会带给服务器。</li>
+<li>hash模式：<ol>
+<li>地址中永远带着#号，不美观。</li>
+<li>兼容性较好</li>
+<li>若以后将地址通过第三方手机app分享，若app校验严格，则地址会被标记为不合法。</li>
+</ol>
+</li>
+<li>history模式：<ol>
+<li>地址干净</li>
+<li>兼容性和hash比较略差。</li>
+<li>应用部署上线时需要后端人员支持，解决页面刷新服务端404问题。</li>
+</ol>
+</li>
+</ol>
+<h3 id="两个新的生命生命周期钩子"><a href="#两个新的生命生命周期钩子" class="headerlink" title="两个新的生命生命周期钩子"></a>两个新的生命生命周期钩子</h3><ol>
+<li>作用：路由组件所独有的两个钩子，用于捕获路由组件的激活状态。</li>
+<li>具体名字：<ol>
+<li>activated 路由组件被激活时触发。</li>
+<li>deactivated 路由组件失活时触发。</li>
+</ol>
+</li>
+</ol>
+<h3 id="VueUI组件库"><a href="#VueUI组件库" class="headerlink" title="VueUI组件库"></a>VueUI组件库</h3><h3 id="Vue3简介"><a href="#Vue3简介" class="headerlink" title="Vue3简介"></a>Vue3简介</h3><ol>
+<li><p>Vue3带来了什么？</p>
+<ol>
+<li><p>性能的提升</p>
+</li>
+<li><p>源码的升级</p>
+<ol>
+<li>使用Proxy代替defineProperty</li>
+<li>重写虚拟dom的实现和tree-Shaking</li>
+</ol>
+</li>
+<li><p>拥抱TypeScript</p>
+<p>Vue 3可以更好的支持TypeScript</p>
+</li>
+<li><p>新的特性</p>
+</li>
+<li><p>Composition API (组合api)</p>
+</li>
+<li><p>setup配置</p>
+</li>
+<li><p>ref和reactive</p>
+</li>
+<li><p>watch和watchEffect</p>
+</li>
+<li><p>provide与inject</p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="Vue-cli版本的升级以及安装"><a href="#Vue-cli版本的升级以及安装" class="headerlink" title="Vue-cli版本的升级以及安装"></a>Vue-cli版本的升级以及安装</h4><ol>
+<li><p>vue-cli的安装及版本查看更新</p>
+<ol>
+<li><p>vue版本的查看</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue -V</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>vue-cli的安装</p>
+<p>npm install vue-cli -g</p>
+</li>
+</ol>
+<blockquote>
+<p>vue-cli的3.0+以后使用的不是vue-cli了，如果用以上的安装命令安装的并不是最新版的3.0+的，而如果安装3.0的话就需要使用新的</p>
+</blockquote>
+<ol start="3">
+<li><p>以前没有安装,直接安装</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install @vue/cli -g</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>如果以前安装了vue-cli，就需要先卸载再安装：</p>
+<p>卸载命令：</p>
+<p>npm uninstall vue-cli -g</p>
+</li>
+</ol>
+</li>
+<li><p>vue-cli4的安装与使用：</p>
+<ol>
+<li><p>若你已经安装过vue-cli2的话，你得先卸载掉，命令如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查看版本</span></span><br><span class="line"></span><br><span class="line">vue -V</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果有的话就用下面命令卸载</span></span><br><span class="line"></span><br><span class="line">npm uninstall vue-cli -g</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>安装vue-cli4.5.14</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//一键初始化项目</span></span><br><span class="line"></span><br><span class="line">npm init -y</span><br><span class="line"></span><br><span class="line"><span class="comment">//安装vue-cli</span></span><br><span class="line"></span><br><span class="line">npm install @vue/cli -g</span><br><span class="line"></span><br><span class="line"><span class="comment">//也可以使用cnpm来安装【推荐】</span></span><br><span class="line"></span><br><span class="line">cnpm install @vue/cli -g </span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>创建一个项目：</p>
+<ol>
+<li><p>vue create 项目名</p>
+</li>
+<li><p>运行项目：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
       
 
       
@@ -251,7 +525,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/03/04/demo/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/03/07/Vuejs%E6%A1%86%E6%9E%B6%E8%BF%9B%E9%98%B6/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,9 +539,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2022/03/07/Git%E7%9A%84%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/2022/03/04/my-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">my-first-blog</div>
+  
+    <a href="/2022/03/04/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
       <i class="icon-circle-right"></i>
     </a>
   
